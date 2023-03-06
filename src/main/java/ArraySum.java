@@ -1,3 +1,4 @@
+import java.util.stream.*;
 public class ArraySum {
     /**
      * This method should return the sum of all ints in an array - this is a very useful trick to know!
@@ -7,7 +8,7 @@ public class ArraySum {
      * @return the sum of all values in arr.
      */
     public int sum(int[] arr){
-
-        return 0;
+        int sum = IntStream.of(arr).sum();
+        return sum;
     }
 }
